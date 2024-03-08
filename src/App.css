@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Mulish:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+.App {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	position: relative;
+}
+.App-content {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: space-evenly;
+	flex-direction: column;
+	width: 500px;
+	height: 600px;
+	background-color: white;
+	border-radius: 15px;
+	box-shadow: 0 0 1px 1px #bebebe;
+	position: fixed;
+	top: 15%;
+}
+.App-content-theme {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: center;
+	position: fixed;
+	background-color: #757575;
+	left: 10px;
+	top: 10px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.App-content-theme #active {
+	background-color: white;
+}
+.App-content-theme div {
+	padding: 12px 12px 10px 12px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+.App-content-theme img {
+	width: 40px;
+}
+.App-content-header {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+#search-input {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	border: 1px solid #bebebe;
+	border-radius: 10px;
+	padding: 6px 8px;
+}
+#search-input svg {
+	width: 22px;
+	margin-right: 6px;
+}
+#search-input input {
+	font-size: 16px;
+	font-family: 'Montserrat';
+	border: none;
+	outline: none;
+	width: 250px;
+	background-color: transparent;
+}
+.App-content-catalog {
+	min-height: 400px;
+	max-width: 400px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.App-content-catalog li {
+	margin-bottom: 15px;
+}
+.App-content-catalog li:last-child {
+	margin-bottom: 0;
+}
+.App-content a {
+	text-decoration: none;
+}
+.App-content #orange-button {
+	font-size: 17px;
+	font-weight: bold;
+	font-family: 'Montserrat';
+	border: none;
+	outline: none;
+	background-color: rgb(251, 80, 0);
+	box-shadow: 0 4px 7px rgba(251, 80, 0, 0.4);
+	border-radius: 8px;
+	padding: 10px 15px;
+	color: white;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+.App-content #orange-button:hover {
+	background-color: rgb(255, 97, 24);
+}
+.App-content #orange-button:active {
+	box-shadow: 0 1px 4px rgba(251, 80, 0, 0.4);
+}
+#black-theme {
+	background-color: rgb(49, 49, 49);
+}
+#black-theme #search-input input {
+	color: white;
+}
+@media (max-width: 530px) {
+	.App-content {
+		width: 340px;
+		height: 500px;
+	}
+	#search-input img {
+		width: 18px;
+	}
+	#search-input input {
+		font-size: 14px;
+		width: 200px;
+	}
+	.App-content-catalog {
+		min-height: 300px;
+		max-width: 320px;
+	}
+	.App-content #orange-button {
+		font-size: 14px;
+		padding: 6px 10px;
+	}
+	.App-content-catalog li {
+		margin-bottom: 10px;
+	}
+}

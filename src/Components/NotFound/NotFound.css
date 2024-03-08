@@ -1,0 +1,64 @@
+.NotFound {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+	width: 500px;
+	height: 600px;
+}
+.NotFound-options {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	align-content: center;
+	flex-direction: column;
+	margin-bottom: 50px;
+	height: 450px;
+}
+.NotFound-options p {
+	font-size: 22px;
+	font-family: 'Montserrat';
+	font-weight: 600;
+	color: #353535;
+}
+.NotFound-options img {
+	width: 250px;
+}
+.NotFound a {
+	text-decoration: none;
+}
+.NotFound #orange-button {
+	display: flex;
+	align-items: center;
+}
+.NotFound #orange-button p {
+	font-size: 18px;
+	font-family: 'Montserrat';
+	text-decoration: none;
+}
+.NotFound #orange-button svg {
+	width: 14px;
+	margin-right: 5px;
+}
+#black-theme .NotFound-options p {
+	color: rgb(216, 216, 216);
+}
+@media (max-width: 530px) {
+	.NotFound-options {
+		margin-bottom: 50px;
+		height: 300px;
+	}
+	.NotFound-options p {
+		font-size: 16px;
+	}
+	.NotFound #orange-button p {
+		font-size: 17px;
+	}
+	.NotFound #orange-button svg {
+		width: 12px;
+	}
+	.NotFound-options img {
+		width: 200px;
+	}
+}

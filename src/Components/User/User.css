@@ -1,0 +1,72 @@
+.User {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: space-evenly;
+	flex-direction: row;
+	width: 400px;
+	overflow: hidden;
+}
+.User img {
+	width: 54px;
+	border-radius: 50%;
+	margin-right: 5px;
+}
+.User-info {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+}
+.User-info #name {
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 'Montserrat';
+	color: #4866eb;
+}
+.User-info #email {
+	font-size: 16px;
+	font-family: 'Montserrat';
+	color: #7c7c7c;
+}
+.User #invite {
+	cursor: pointer;
+	width: 25px;
+	height: 25px;
+}
+.User #invite #plus {
+	width: 20px;
+	height: 20px;
+}
+.User #invite #tick {
+	width: 25px;
+	height: 25px;
+}
+@media (max-width: 530px) {
+	.User {
+		width: 300px;
+	}
+	.User img {
+		width: 44px;
+	}
+	.User-info {
+		width: 200px;
+	}
+	.User-info #name {
+		font-size: 15px;
+	}
+	.User-info #email {
+		font-size: 13px;
+	}
+	.User #invite {
+		width: 20px;
+		height: 20px;
+	}
+	.User #invite #plus {
+		width: 15px;
+		height: 15px;
+	}
+	.User #invite #tick {
+		width: 20px;
+		height: 20px;
+	}
+}
